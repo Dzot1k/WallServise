@@ -25,6 +25,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(1), Video(2), Doc(14), Link(13), Photo(144)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -47,7 +48,6 @@ class WallServiceTest {
 
     @Test
     fun updateFalse() {
-
         WallService.add(
             Post(
                 id = 1,
@@ -66,6 +66,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(1), Video(2), Doc(14), Link(13), Photo(144)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -98,6 +99,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(4), Video(5), Doc(33), Link(17), Photo(22)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -130,6 +132,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(10), Video(20), Doc(140), Link(130), Photo(11)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -161,6 +164,7 @@ class WallServiceTest {
             views = "ViewsObject",
             postType = "Post",
             postSource = "PostSourceObject",
+            attachments = arrayOf(Audio(1), Video(2), Doc(14), Link(13), Photo(144)),
             geo = "GeoObject",
             signerId = 15,
             copyHistory = "CopyHistoryObject",
@@ -202,6 +206,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(16), Video(24), Doc(14), Link(12), Photo(16)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -234,6 +239,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(1), Video(2), Doc(14), Link(13), Photo(144)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -266,6 +272,7 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachments = arrayOf(Audio(14), Video(21), Doc(18), Link(19), Photo(16)),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -297,6 +304,7 @@ class WallServiceTest {
             views = "ViewsObject",
             postType = "Post",
             postSource = "PostSourceObject",
+            attachments = arrayOf(Audio(1), Video(2), Doc(14), Link(13), Photo(144)),
             geo = "GeoObject",
             signerId = 15,
             copyHistory = "CopyHistoryObject",
