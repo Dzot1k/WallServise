@@ -25,6 +25,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -66,6 +70,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -98,6 +106,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -130,6 +142,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -161,6 +177,10 @@ class WallServiceTest {
             views = "ViewsObject",
             postType = "Post",
             postSource = "PostSourceObject",
+            attachment = arrayOf(
+                AudioAttachment(Audio(12)), VideoAttachment(Video(21)),
+                PhotoAttachment(Photo(56)), DocAttachment(Doc(94)), LinkAttachment(Link(1))
+            ),
             geo = "GeoObject",
             signerId = 15,
             copyHistory = "CopyHistoryObject",
@@ -202,6 +222,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -234,6 +258,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -266,6 +294,10 @@ class WallServiceTest {
                 views = "ViewsObject",
                 postType = "Post",
                 postSource = "PostSourceObject",
+                attachment = arrayOf(
+                    AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                    PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+                ),
                 geo = "GeoObject",
                 signerId = 15,
                 copyHistory = "CopyHistoryObject",
@@ -297,6 +329,10 @@ class WallServiceTest {
             views = "ViewsObject",
             postType = "Post",
             postSource = "PostSourceObject",
+            attachment = arrayOf(
+                AudioAttachment(Audio(1)), VideoAttachment(Video(2)),
+                PhotoAttachment(Photo(5)), DocAttachment(Doc(9)), LinkAttachment(Link(19))
+            ),
             geo = "GeoObject",
             signerId = 15,
             copyHistory = "CopyHistoryObject",
