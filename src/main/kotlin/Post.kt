@@ -22,14 +22,25 @@ data class Post(
     val markedAsAds: Boolean = true,
     val isFavorite: Boolean = true,
     val donut: String,
-    val postponedId: Int
+    val postponedId: Int,
 ) {
-
 }
+
 
 object WallService {
     private var posts = emptyArray<Post>()
     private var postsId = emptyArray<Int>()
+    private var comments = emptyArray<Comment>()
+
+    fun createComment(comment: Comment): Boolean {
+        for (postSortOut in posts) {
+            if (postSortOut.id == comment.postId) {
+                comments += comment
+                return true
+            }
+        }
+        throw PostNotFoundException("no post with ${comment.postId}")
+    }
 
     fun add(post: Post): Post {
         postsId += post.id
@@ -71,3 +82,7 @@ object WallService {
         return false
     }
 }
+
+
+class PostNotFoundException(message: String) : RuntimeException(message)
+
