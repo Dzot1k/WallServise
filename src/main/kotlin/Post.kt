@@ -31,6 +31,19 @@ object WallService {
     private var posts = emptyArray<Post>()
     private var postsId = emptyArray<Int>()
     private var comments = emptyArray<Comment>()
+    private var reports = emptyArray<Comment>()
+
+    fun reportComment(comment: Comment, reason: Int): Boolean {
+        for (commentSorOut in comments) {
+            if (commentSorOut.id == comment.id) {
+                if (reason in 0..8) {
+                    reports += comment
+                    return true
+                } else throw ReasonNotFoundException("no reason with reason: $reason")
+            }
+        }
+        throw CommentNotFoundException("no comment with id: ${comment.id}")
+    }
 
     fun createComment(comment: Comment): Boolean {
         for (postSortOut in posts) {
@@ -39,7 +52,7 @@ object WallService {
                 return true
             }
         }
-        throw PostNotFoundException("no post with ${comment.postId}")
+        throw PostNotFoundException("no post with id: ${comment.postId}")
     }
 
     fun add(post: Post): Post {
@@ -85,4 +98,6 @@ object WallService {
 
 
 class PostNotFoundException(message: String) : RuntimeException(message)
+class CommentNotFoundException(message: String) : RuntimeException(message)
+class ReasonNotFoundException(message: String) : RuntimeException(message)
 
