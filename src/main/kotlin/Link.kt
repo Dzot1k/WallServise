@@ -1,11 +1,3 @@
-open class LinkAttachment : Attachments {
-    override val type: String
-        get() {
-            return "Link"
-        }
+data class LinkAttachment(override val type: String = "link", val link: Link) : Attachments {}
 
-}
-
-class Link(val id: Int) : LinkAttachment() {
-
-}
+data class Link(val id: Int, val linkUrl: Int) {}

@@ -1,10 +1,3 @@
-open class DocAttachment : Attachments {
-    override val type: String
-        get() {
-            return "Doc"
-        }
-}
+data class DocAttachment(override val type: String = "doc", val doc: Doc) : Attachments {}
 
-class Doc(val id: Int) : DocAttachment() {
-
-}
+data class Doc(val id: Int, val docUrl: Int) {}

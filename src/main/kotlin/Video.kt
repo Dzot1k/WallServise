@@ -1,10 +1,3 @@
-open class VideoAttachment : Attachments {
-    override val type: String
-        get() {
-            return "Video"
-        }
-}
+data class VideoAttachment(override val type: String = "video", val video: Video) : Attachments {}
 
-class Video(val id: Int) : VideoAttachment() {
-
-}
+data class Video(val id: Int, val videoUrl: Int) {}
